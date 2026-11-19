@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace>CachedPartialMinHeap</RootNamespace>
+    <AssemblyName>CachedPartialMinHeap</AssemblyName>
+    <Description>Cache-conscious Cached Min-Heap and bounded Partial Min-Heap priority queues for A* pathfinding and general priority scheduling.</Description>
+    <Authors>Mohsen Tavakoli</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>

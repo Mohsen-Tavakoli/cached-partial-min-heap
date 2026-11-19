@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="920" height="460">
+<style>
+  .bg { fill: #0d1117; }
+  .title { fill: #f0f6fc; font: 600 18px system-ui, -apple-system, Segoe UI, sans-serif; }
+  .axis-label { fill: #8b949e; font: 12px system-ui, -apple-system, Segoe UI, sans-serif; }
+  .tick { fill: #8b949e; font: 11px ui-monospace, SFMono-Regular, monospace; }
+  .legend { fill: #c9d1d9; font: 12px system-ui, -apple-system, Segoe UI, sans-serif; }
+  .grid { stroke: #21262d; stroke-width: 1; }
+  .axis { stroke: #30363d; stroke-width: 1.5; }
+</style>
+<rect class="bg" width="920" height="460" rx="10" />
+<text class="title" x="85" y="34">A* Median Pathfinding Latency by Obstacle Density (Lower is Better)</text>
+<rect x="85" y="48" width="12" height="12" rx="2" fill="#3b82f6" />
+<text class="legend" x="102" y="58">BinaryMinHeap</text>
+<rect x="210" y="48" width="12" height="12" rx="2" fill="#10b981" />
+<text class="legend" x="227" y="58">DaryMinHeap (d=4)</text>
+<rect x="359" y="48" width="12" height="12" rx="2" fill="#8b5cf6" />
+<text class="legend" x="376" y="58">.NET PriorityQueue</text>
+<rect x="515" y="48" width="12" height="12" rx="2" fill="#f59e0b" />
+<text class="legend" x="532" y="58">CachedMinHeap (k=127)</text>
+<rect x="692" y="48" width="12" height="12" rx="2" fill="#ef4444" />
+<text class="legend" x="709" y="58">PartialMinHeap (k=127)</text>
+<line class="grid" x1="85" y1="365.0" x2="890" y2="365.0" />
+<text class="tick" x="75" y="369.0" text-anchor="end">0</text>
+<line class="grid" x1="85" y1="308.4" x2="890" y2="308.4" />
+<text class="tick" x="75" y="312.4" text-anchor="end">188</text>
+<line class="grid" x1="85" y1="251.8" x2="890" y2="251.8" />
+<text class="tick" x="75" y="255.8" text-anchor="end">376</text>
+<line class="grid" x1="85" y1="195.2" x2="890" y2="195.2" />
+<text class="tick" x="75" y="199.2" text-anchor="end">564</text>
+<line class="grid" x1="85" y1="138.6" x2="890" y2="138.6" />
+<text class="tick" x="75" y="142.6" text-anchor="end">752</text>
+<line class="grid" x1="85" y1="82.0" x2="890" y2="82.0" />
+<text class="tick" x="75" y="86.0" text-anchor="end">940</text>
+<text class="axis-label" x="22" y="223.5" transform="rotate(-90 22 223.5)" text-anchor="middle">Median Time (microseconds)</text>
+<rect x="113.2" y="282.1" width="26.0" height="82.9" rx="2" fill="#3b82f6"><title>Random 200x200 (10% obs) | BinaryMinHeap: 275.5</title></rect>
+<rect x="142.2" y="288.2" width="26.0" height="76.8" rx="2" fill="#10b981"><title>Random 200x200 (10% obs) | DaryMinHeap (d=4): 255.1</title></rect>
+<rect x="171.1" y="329.3" width="26.0" height="35.7" rx="2" fill="#8b5cf6"><title>Random 200x200 (10% obs) | .NET PriorityQueue: 118.6</title></rect>
+<rect x="200.1" y="252.0" width="26.0" height="113.0" rx="2" fill="#f59e0b"><title>Random 200x200 (10% obs) | CachedMinHeap (k=127): 375.3</title></rect>
+<rect x="229.1" y="233.6" width="26.0" height="131.4" rx="2" fill="#ef4444"><title>Random 200x200 (10% obs) | PartialMinHeap (k=127): 436.4</title></rect>
+<text class="axis-label" x="185.6" y="389" text-anchor="middle">Random (10% obs)</text>
+<rect x="314.4" y="208.6" width="26.0" height="156.4" rx="2" fill="#3b82f6"><title>Random 200x200 (20% obs) | BinaryMinHeap: 519.6</title></rect>
+<rect x="343.4" y="207.6" width="26.0" height="157.4" rx="2" fill="#10b981"><title>Random 200x200 (20% obs) | DaryMinHeap (d=4): 523.1</title></rect>
+<rect x="372.4" y="290.4" width="26.0" height="74.6" rx="2" fill="#8b5cf6"><title>Random 200x200 (20% obs) | .NET PriorityQueue: 247.9</title></rect>
+<rect x="401.4" y="154.6" width="26.0" height="210.4" rx="2" fill="#f59e0b"><title>Random 200x200 (20% obs) | CachedMinHeap (k=127): 699.0</title></rect>
+<rect x="430.3" y="137.0" width="26.0" height="228.0" rx="2" fill="#ef4444"><title>Random 200x200 (20% obs) | PartialMinHeap (k=127): 757.4</title></rect>
+<text class="axis-label" x="386.9" y="389" text-anchor="middle">Random (20% obs)</text>
+<rect x="515.7" y="120.5" width="26.0" height="244.5" rx="2" fill="#3b82f6"><title>Random 200x200 (30% obs) | BinaryMinHeap: 812.4</title></rect>
+<rect x="544.7" y="125.9" width="26.0" height="239.1" rx="2" fill="#10b981"><title>Random 200x200 (30% obs) | DaryMinHeap (d=4): 794.5</title></rect>
+<rect x="573.6" y="208.2" width="26.0" height="156.8" rx="2" fill="#8b5cf6"><title>Random 200x200 (30% obs) | .NET PriorityQueue: 521.0</title></rect>
+<rect x="602.6" y="118.6" width="26.0" height="246.4" rx="2" fill="#f59e0b"><title>Random 200x200 (30% obs) | CachedMinHeap (k=127): 818.6</title></rect>
+<rect x="631.6" y="148.7" width="26.0" height="216.3" rx="2" fill="#ef4444"><title>Random 200x200 (30% obs) | PartialMinHeap (k=127): 718.7</title></rect>
+<text class="axis-label" x="588.1" y="389" text-anchor="middle">Random (30% obs)</text>
+<rect x="716.9" y="184.5" width="26.0" height="180.5" rx="2" fill="#3b82f6"><title>Random 200x200 (35% obs) | BinaryMinHeap: 599.8</title></rect>
+<rect x="745.9" y="183.0" width="26.0" height="182.0" rx="2" fill="#10b981"><title>Random 200x200 (35% obs) | DaryMinHeap (d=4): 604.7</title></rect>
+<rect x="774.9" y="196.4" width="26.0" height="168.6" rx="2" fill="#8b5cf6"><title>Random 200x200 (35% obs) | .NET PriorityQueue: 560.0</title></rect>
+<rect x="803.9" y="138.1" width="26.0" height="226.9" rx="2" fill="#f59e0b"><title>Random 200x200 (35% obs) | CachedMinHeap (k=127): 753.8</title></rect>
+<rect x="832.8" y="112.3" width="26.0" height="252.7" rx="2" fill="#ef4444"><title>Random 200x200 (35% obs) | PartialMinHeap (k=127): 839.5</title></rect>
+<text class="axis-label" x="789.4" y="389" text-anchor="middle">Random (35% obs)</text>
+<line class="axis" x1="85" y1="82" x2="85" y2="365" />
+<line class="axis" x1="85" y1="365" x2="890" y2="365" />
+</svg>
